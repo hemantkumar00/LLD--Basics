@@ -11,3 +11,7 @@ public class Printer {
         System.out.println();
     }
 }
+
+/*
+ * The wildcard(?) is used to represent an unknown type.
+ */

@@ -34,3 +34,24 @@ public class Client {
         System.out.println(pair.getValue());
     }
 }
+
+/*
+ * Type erasure is a feature in java generics where that type parameters used in generic code are removed during compilation.
+ * This means that the generic type information is not available at runtime, and the generic types are replaced with their upper bounds or object type.
+ *
+ * How it works
+ *
+ * Java generics are type-checked to ensure type safety. the compiler replaces all generic types with their upper bounds or with object if no bound is specified.
+ * compiler removes all generic type information and replaces it with casting or object.
+ * This process is known as type erasure, and it allows java to maintain backward compatibility with non-generic code.
+ *
+ * Implications of Type erasure.
+ * 1. Loss of Type Information at runtime.
+ * 2. Bridge Methods.
+ * 3. Arrays and Generics.
+ * 4. Casting and unchecked warnings.
+ *
+ * Type erasure is a mechanism in Java generics that removes generic type information during compilation to maintain compatibility with non-generic code.
+ * While this approach allows for seamless integration with existing code, it also means that certain generic type information is not available at runtime.
+ * Developers need to be aware of the implications of type erasure, such as potential unchecked warnings and limitations on working with arrays of generic types.
+ */
