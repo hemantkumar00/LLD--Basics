@@ -2,7 +2,7 @@ package com.advanceJava.Threads;
 
 public class NumberPrinter implements Runnable {
     int number;
-    NumberPrinter(int number) {
+    public NumberPrinter(int number) {
         this.number = number;
     }
     @Override

@@ -29,30 +29,30 @@ public class Main {
     static void main() throws InterruptedException {
 //        Thread t = new Thread(new SimpleRunnable());
 //        t.start();
-//        for(int i=0;i<100;i++){
-//            Thread t = new Thread(new NumberPrinter(i));
-//            t.start();
-//        }
+        for(int i=0;i<100;i++){
+            Thread t = new Thread(new NumberPrinter(i));
+            t.start();
+        }
         // Factorial program
 
-        List<Long> inputNumbers = Arrays.asList(100000000L, 3452L, 2345234L, 3432L, 23L);
-        List<FactorialThread> threads = new ArrayList<>();
-        for (Long inputNumber : inputNumbers) {
-            threads.add(new FactorialThread(inputNumber));
-        }
-        for( Thread thread : threads ) {
-            thread.start();
-        }
-        for( Thread thread : threads ) {
-            thread.join(2000);
-        }
-        for( FactorialThread thread : threads ) {
-            if(thread.isFinished()){
-                System.out.println(thread.getResult());
-            }else{
-                System.out.println("Couldn't complete calc in 2s");
-            }
-        }
-        System.out.println("Done");
+//        List<Long> inputNumbers = Arrays.asList(100000000L, 3452L, 2345234L, 3432L, 23L);
+//        List<FactorialThread> threads = new ArrayList<>();
+//        for (Long inputNumber : inputNumbers) {
+//            threads.add(new FactorialThread(inputNumber));
+//        }
+//        for( Thread thread : threads ) {
+//            thread.start();
+//        }
+//        for( Thread thread : threads ) {
+//            thread.join(2000);
+//        }
+//        for( FactorialThread thread : threads ) {
+//            if(thread.isFinished()){
+//                System.out.println(thread.getResult());
+//            }else{
+//                System.out.println("Couldn't complete calc in 2s");
+//            }
+//        }
+//        System.out.println("Done");
     }
 }

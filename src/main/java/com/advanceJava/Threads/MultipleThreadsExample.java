@@ -6,7 +6,7 @@ public class MultipleThreadsExample {
         NewThread t2 = new NewThread();
         t1.setName("t1");
         t2.setName("t2");
-        t1.start();
-        t2.start();
+//        t1.start();
+//        t2.start();
     }
 }
