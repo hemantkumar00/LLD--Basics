@@ -27,4 +27,12 @@ public class Basics {
  * Solution:-
  * - Constructor hiding:- The constructor of the singleton class should be private or protected.
  * - Global access point:- The singleton class should provide a global access point to get the instance of the singleton class. This global access point should be static and should return the same instance of the singleton class.
+ *
+ * Prototype:-
+ * The prototype pattern is a creational design pattern that can be used to create objects that are similar to each other.
+ * The pattern is used to avoid the cost of creating new objects by cloning an existing object and avoiding dependencies on the class of the object that needs to be cloned.
+ *
+ * Factory:-
+ * The factory pattern is a creational design pattern that can be used to create objects without specifying the exact class of the object that will be created.
+ * The pattern is used to avoid dependencies on the class of the object that needs to be created.
  */
